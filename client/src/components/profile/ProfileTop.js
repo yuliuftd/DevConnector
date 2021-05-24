@@ -44,6 +44,8 @@ const ProfileTop = ({
   );
 };
 
-ProfileTop.propTypes = { profile: PropTypes.object.isRequired };
+ProfileTop.propTypes = {
+  profile: PropTypes.object.isRequired,
+};
 
 export default ProfileTop;

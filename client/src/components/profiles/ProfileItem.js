@@ -12,7 +12,7 @@ const ProfileItem = ({
   },
 }) => {
   return (
-    <div className="profile b-light">
+    <div className="profile bg-light">
       <img src={avatar} alt="" className="round-img" />
       <div>
         <h2>{name}</h2>
@@ -27,7 +27,7 @@ const ProfileItem = ({
       <ul>
         {skills.slice(0, 4).map((skill, index) => (
           <li key={index} className="text-primary">
-            <i className="fas fa-check"></i> {skill}
+            <i className="fas fa-check" /> {skill}
           </li>
         ))}
       </ul>
@@ -35,6 +35,8 @@ const ProfileItem = ({
   );
 };
 
-ProfileItem.propTypes = { profile: PropTypes.object.isRequired };
+ProfileItem.propTypes = {
+  profile: PropTypes.object.isRequired,
+};
 
 export default ProfileItem;

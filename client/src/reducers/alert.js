@@ -1,14 +1,8 @@
 import { SET_ALERT, REMOVE_ALERT } from "../actions/types";
 
-const initialState = [
-  // {
-  //     id: 1,
-  //     msg: 'Please log in',
-  //     alertType: ''
-  // }
-];
+const initialState = [];
 
-const alert = (state = initialState, action) => {
+function alertReducer(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
@@ -19,6 +13,6 @@ const alert = (state = initialState, action) => {
     default:
       return state;
   }
-};
+}
 
-export default alert;
+export default alertReducer;
